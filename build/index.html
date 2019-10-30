@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <link rel="stylesheet" href="style.css">
+  <nav>
+      <a href="index.html">Home</a> |
+      <a href="create.html">Add User</a> 
+      </nav>
+      
+  </head>
+  <body>
+      <h1>Random Users API w/ Chart.js</h1>
+      <h2 id="userCount"></h2>
+
+
+    <!-- <span>Change # of People</span>
+    <select id="drpdown" onchange="myLib.myFunction()" style="displaynone;" >
+      <option value="fourty">40</option>
+      <option value="sixty">60</option>
+      <option value="eighty">80</option>
+      <option value="one-hundred">100</option>
+      <option value="one-hundred">1537</option>
+    </select> -->
+<button id="clear" onclick="myLib.getPathFromUrl()">Remove My User</button>
+    <div class="flex-container">
+      <span>Nationality</span>
+      <div>
+        <canvas id="myChart" width="320" height="320"></canvas>
+      </div> 
+      <span>Gender</span>
+      <div>
+        <canvas id="myChart2" width="320" height="320"></canvas>
+      </div>
+      <span>D.O.B (Year)</span>      
+      <div>
+        <canvas id="myChart3" width="320" height="320"></canvas>
+      </div>
+    </div>
+    <div id="peopleContainer">
+      <h2>Users List</h2>
+            <hr/>
+        <div id="peopleList" width="350" height="350"></div>
+    </div>
+
+    <script src="main.bundle.js"></script>
+  </body>
+</html>
